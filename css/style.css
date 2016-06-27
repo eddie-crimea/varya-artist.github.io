@@ -154,7 +154,7 @@
 
 .main_footer {
   min-height: 60px;
-  widows: 100%;
+  width: 100%;
 }
 
 /***SOCIAL-BUTTON-STYLE***/
@@ -221,6 +221,7 @@
   .desc_wrap {
     width: 70%;
     margin-left: 15%;
+    margin-top: 50px;
     }
   .desc_image {
     width: 100%;
@@ -229,6 +230,9 @@
     width: 100%;
     margin: 0 auto; 
 }
+  .main_footer {
+    display: none;
+  }
   .social {
     display: none;
   }
