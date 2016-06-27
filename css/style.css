@@ -1,6 +1,6 @@
 
  body {
-  min-width: 300px;
+  min-width: 250px;
   max-width: 1900px;
   font-size: 1em;
   line-height: 1.2;
@@ -211,6 +211,11 @@
   .slider_content {
     display: none;
   }
+  .container {
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+}
   .desc_container {
     background: #b7b7b7;
   }
@@ -230,9 +235,6 @@
     width: 100%;
     margin: 0 auto; 
 }
-  .main_footer {
-    display: none;
-  }
   .social {
     display: none;
   }
