@@ -211,17 +211,13 @@
   .slider_content {
     display: none;
   }
-  .container {
-  width: 100%;
-  max-width: 1900px;
-  margin: 0 auto;
-}
   .desc_container {
     background: #b7b7b7;
   }
   .desc_text {
     font-size: 1em;
     margin: 50px auto;
+    padding-bottom: 20px;
   }
   .desc_wrap {
     width: 70%;
