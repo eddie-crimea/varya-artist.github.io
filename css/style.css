@@ -19,12 +19,12 @@
 .main_header {
   width: 100%;
   position: relative;
-  min-height: 60px;
-  margin-bottom: -10px;
+  min-height: 50px;
 }
 .main_logo {
-  margin-left: 50%;
-  margin-top: 15px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 }
 .icon_menu {
   position: fixed;
@@ -109,14 +109,13 @@
   display: block; 
   bottom: 100%;
   top: 10px;
-  left: 40px;
 }
 /***MAIN-SLIDER***/
 
 /***SECOND-SECTION-ABOUT***/
 
 .desc_container {
-  height: 100vh;
+  height: 95vh;
   margin-top: -30px;
 }
 .desc_wrap {
