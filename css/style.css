@@ -17,6 +17,7 @@
 /*header-section*/
 
 .main_header {
+  width: 100%;
   position: relative;
   min-height: 60px;
   margin-bottom: -10px;
@@ -204,6 +205,12 @@
 @media only screen and (max-width: 500px) {
   .desc_container {
     height: auto;
+  }
+  .main_header {
+    width: 100%;
+  }
+    .main_logo {
+    margin-left: 50%;
   }
   .desc_text {
     font-size: 1em;
