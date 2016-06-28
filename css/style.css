@@ -203,7 +203,7 @@
 
 @media only screen and (max-width: 500px) {
   .desc_container {
-    background: #b7b7b7;
+    height: auto;
   }
   .desc_text {
     font-size: 1em;
@@ -223,6 +223,6 @@
     margin: 0 auto; 
 }
   .main_footer {
-    /*display: none;*/
+    display: none;
   }
 }
