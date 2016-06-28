@@ -1,7 +1,5 @@
 
  body {
-  min-width: 250px;
-  max-width: 1900px;
   font-size: 1em;
   line-height: 1.2;
   font-family: "Corbel", "Arial", sans-serif;
@@ -13,11 +11,9 @@
 }
 .container {
   width: 100%;
-  max-width: 1900px;
   margin: 0 auto;
   overflow: hidden;
 }
-
 /*header-section*/
 
 .main_header {
@@ -104,7 +100,7 @@
   overflow: hidden;
 }
 .main_slider img {
-  height: 95vh;
+  height: auto;
   width: 100%;
 }
 .slick-dots {
@@ -114,7 +110,6 @@
   top: 10px;
   left: 40px;
 }
-
 /***MAIN-SLIDER***/
 
 /***SECOND-SECTION-ABOUT***/
@@ -207,9 +202,6 @@
 /***TEST-MEDIA-QUARRIES***/
 
 @media only screen and (max-width: 500px) {
-  .slider_content {
-    display: none;
-  }
   .desc_container {
     background: #b7b7b7;
   }
@@ -231,6 +223,6 @@
     margin: 0 auto; 
 }
   .main_footer {
-    display: none;
+    /*display: none;*/
   }
 }
