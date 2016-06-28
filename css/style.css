@@ -101,7 +101,6 @@
 /***MAIN-SLIDER***/
 
 .main_slider {
-  /*position: relative;*/
   overflow: hidden;
 }
 .main_slider img {
@@ -207,7 +206,7 @@
 
 /***TEST-MEDIA-QUARRIES***/
 
-@media  (max-width: 700px) {
+@media only screen and (max-width: 500px) {
   .slider_content {
     display: none;
   }
@@ -225,13 +224,13 @@
     margin-top: 50px;
     }
   .desc_image {
-    width: 100%;
+    max-width: 100%;
   }
   .desc_wrap:nth-child(2) {
     width: 100%;
     margin: 0 auto; 
 }
-  .social {
+  .main_footer {
     display: none;
   }
 }
