@@ -227,17 +227,23 @@
 .gallery_image {
   max-width: 100%;
   height: auto;
+  border: none;
+  margin-top: -10px;
 }
 .gallery_mix {
   width: 600px;
   height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 /***TEST-MEDIA-QUARRIES***/
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .gallery_item {
     margin: 0 auto;
   }
