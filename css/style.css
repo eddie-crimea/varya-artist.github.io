@@ -3,6 +3,8 @@
   font-size: 1em;
   line-height: 1.2;
   font-family: "Corbel", "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 .clearfix::after {
   content: "";
@@ -13,13 +15,16 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 /*header-section*/
 
 .main_header {
-  width: 100%;
   position: relative;
+  width: 100%;
   min-height: 50px;
+  z-index: 1000000;
+  background: #fff;
 }
 .main_logo {
   display: block;
@@ -98,6 +103,7 @@
 /***MAIN-SLIDER***/
 
 .main_slider {
+  /*margin-top: 50px;*/
   overflow: hidden;
 }
 .main_slider img {
@@ -108,7 +114,7 @@
   position: absolute;
   display: block; 
   bottom: 100%;
-  top: 10px;
+  top: 0%;
 }
 /***MAIN-SLIDER***/
 
@@ -199,6 +205,34 @@
   background: #746cc2 url("../img/insta-logo-black.png") no-repeat 50% 50%;
 }
 
+/***PORTRAIT-SECTION***/
+
+.gallery_container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.gallery_wrap_inner {
+  /*outline: 3px solid blue;*/
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gallery_item {
+  /*outline: 2px solid green;*/
+  padding: 0;
+  margin: 0;
+}
+.gallery_mix {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 /***TEST-MEDIA-QUARRIES***/
 
 @media only screen and (max-width: 500px) {
@@ -234,3 +268,4 @@
     display: none;
   }
 }
+
