@@ -58,7 +58,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  left: -300px;
+  left: -9999px;
   float: left;
   width: 150px;
   height: 100%;
@@ -224,7 +224,8 @@
   position: relative;
   padding: 0;
   margin: 0;
-  margin-bottom: -10px;
+  /*margin-bottom: -10px;*/
+
 }
 .gallery_item:hover:before {
   content:"Click for zoom";
@@ -237,13 +238,19 @@
   color: #000;
   font-weight: bold;
 }
-.gallery_image:hover {
-  opacity: 0.7;
-  transition: 1s;
-}
+
 .gallery_image {
+  vertical-align: middle;
   max-width: 100%;
   height: auto;
+
+}
+.gallery_image:hover {
+  opacity: 0.6;
+  -webkit-transition:  0.5s ease-out;
+  -moz-transition:  0.5s ease-out;
+  -o-transition:  0.5s ease-out;
+  transition:  0.5s ease-out;
 }
 .gallery_mix {
   width: 600px;
@@ -258,7 +265,7 @@
 
 /***TEST-MEDIA-QUARRIES***/
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 615px) {
   .gallery_item {
     margin: 0 auto;
   }
@@ -295,6 +302,12 @@
   }
   .main_footer {
     display: none;
+  }
+  .sidebar {
+    width: 100vw;
+  }
+  .sidebar_item {
+    text-align: center;
   }
 }
 
