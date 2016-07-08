@@ -212,7 +212,6 @@
   margin: 20px auto;
 }
 .gallery_wrap_inner {
-  /*outline: 3px solid blue;*/
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -238,7 +237,7 @@
 }
 /***TEST-MEDIA-QUARRIES***/
 
-@media only screen and (max-width: 400px;) {
+@media only screen and (max-width: 400px) {
   .gallery_item {
     margin: 0 auto;
   }
