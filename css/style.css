@@ -222,9 +222,12 @@
   flex-wrap: wrap;
 }
 .gallery_item {
-  /*outline: 2px solid green;*/
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+}
+.gallery_image {
+  max-width: 100%
+  height: auto;
 }
 .gallery_mix {
   width: 600px;
@@ -235,8 +238,14 @@
 }
 /***TEST-MEDIA-QUARRIES***/
 
-@media only screen and (max-width: 500px) {
-  .desc_container {
+@media only screen and (max-width: 400px) {
+  .gallery_item {
+    margin: 0 auto;
+  }
+  .gallery_mix {
+    display: none;
+  }
+    .desc_container {
     height: auto;
   }
   .main_header {
@@ -263,7 +272,7 @@
   .desc_wrap:nth-child(2) {
     width: 100%;
     margin: 0 auto; 
-}
+  }
   .main_footer {
     display: none;
   }
