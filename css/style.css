@@ -322,5 +322,8 @@
   .sidebar_item {
     text-align: center;
   }
+  .icon_menu {
+    margin: 0;
+  }
 }
 
