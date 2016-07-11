@@ -1,5 +1,5 @@
 $(function(){
-$('.main_slider').slick({
+$(".main-slider").slick({
   dots: true,
   infinite: true,
   autoplay: true,
@@ -9,9 +9,4 @@ $('.main_slider').slick({
   cssEase: 'linear'
   });
 });
-// $(document).ready(function($){
-// 	$(".icon_menu").click(function(event) {
-// 		$(".sidebar").toggleClass("active")
-// 	});
-// });
 

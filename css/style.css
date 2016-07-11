@@ -19,66 +19,63 @@
 }
 /*header-section*/
 
-.main_header {
+.page-header {
   position: fixed;
   width: 100%;
+  top: 0;
   min-height: 50px;
   z-index: 9999;
   background: #fff;
 }
-.main_logo {
+.page-header__logo-wrap {
   display: block;
-  margin: auto;
+  margin-left: 47%;
   margin-top: 10px;
 }
-.icon_menu {
+.icon-menu {
   position: fixed;
+  top: 5px;
+  left: 5px;
   height: 25px;
   width: 20px;
   float: left;
   padding: 5px 0;
   cursor: pointer;
-  margin-left: 5px;
-  margin-top: 10px;
   z-index: 20;
 }
-.divide {
+.icon-menu__divide {
   display: block;
   height: 3px;
   margin: 4px 0;
   background: #000;
 }
 
-/*header-section*/
-
-/*content-section*/
-
  /***SIDEBAR-STYLE***/
 
-.sidebar {
+.main-content__sidebar {
   position: fixed;
   top: 0;
   left: -9999px;
   float: left;
-  width: 150px;
+  width: 160px;
   height: 100%;
   padding: 20px;
-  -webkit-transition: left 0.2s  ease-out 0.4s;
-  -moz-transition: left 0.2s ease-out 0.4s;
-  -o-transition: left 0.2s ease-out 0.4s;
-  transition: left 0.2s ease-out 0.4s;
+  -webkit-transition: left 0.5s;
+  -moz-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
   z-index: 10;
   background: rgba(0, 0, 0, 0.4)
 }
-.sidebar.active {
+.main-content__sidebar.active {
   left: 0;
 }
-.sidebar_list {
+.main-content__sidebar-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.sidebar_item {
+.main-content__sidebar-item {
   font-size: 0.937em;
   line-height: 1.2;
   text-transform: uppercase;
@@ -86,28 +83,28 @@
   padding: 0 3px;
   margin: 25px 0;
 }
-.sidebar_item:first-child {
+.main-content__sidebar-item:first-child {
   margin-top: 65px;
 }
-.sidebar_link {
+.main-content__sidebar-link {
   text-decoration: none;
   color: #fff;
 }
-.sidebar_link:hover {
+.main-content__sidebar-link:hover {
   color: #000;
   font-weight: bold;
 }
 
-/***SIDEBAR-STYLE***/
-
 /***MAIN-SLIDER***/
 
-.main_slider {
-  /*margin-top: 50px;*/
-  overflow: hidden;
+.main-content {
   margin-top: 50px;
 }
-.main_slider img {
+
+/*.main_slider {
+  overflow: hidden;
+}*/
+.main-slider__slide_image {
   height: auto;
   width: 100%;
 }
@@ -117,62 +114,57 @@
   bottom: 100%;
   top: 0%;
 }
-/***MAIN-SLIDER***/
 
 /***SECOND-SECTION-ABOUT***/
 
-.desc_container {
+.desc-section {
   height: 95vh;
   margin-top: -30px;
 }
-.desc_wrap {
+.desc-section__desc-wrap {
   float: left;
   margin-left: 20%;
   margin-top: 250px;
   width: 20%;
 }
-.desc_image {
+.desc-section__desc-image{
   max-width: 100%;
   height: auto;
 }
-.desc_wrap:nth-child(2) {
+.desc-section__desc-wrap:nth-child(2) {
   width: 30%;
   margin-top: 17%;
   margin-left: 100px;
 }
-.desc_text {
+.desc-section__desc-text {
   text-align: center;
   font-size: 1.25em;
   line-height: 1.2;
   font-weight: bold;
 }
 
-/***SECOND-SECTION-ABOUT***/
-
-/*content-section*/
-
 /*footer*/
 
-.main_footer {
+.main-footer {
   min-height: 60px;
   width: 100%;
 }
 
 /***SOCIAL-BUTTON-STYLE***/
 
-.social {
+.main-footer__social {
   margin-left: 45%;
   min-height: 30px;
 }
-.social_list {
+.main-footer__social-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.social_item {
+.main-footer__social-item {
   display: inline-block;
 }
-.social_link {
+.main-footer__social-link {
   display: block;
   height: 41px;
   width: 41px;
@@ -187,49 +179,49 @@
   -o-transition: background 0.5s;
   transition: background 0.5s;
 }
-.social_vk {
+.main_footer--social-vk {
   background: #000 url("../img/vk_logo.png") no-repeat 50% 50%;
 }
-.social_fb {
+.main_footer-social-fb {
   background: #000 url("../img/fb_logo.png") no-repeat 50% 50%;
 }
-.social_insta {
+.main_footer-social-insta {
   background: #000 url("../img/insta_logo.png") no-repeat 50% 50%;
 }
-.social_vk:hover {
+.main_footer--social-vk:hover {
   background: #746cc2 url("../img/vk-logo-black.png") no-repeat 50% 50%;
 }
-.social_fb:hover {
+.main_footer-social-fb:hover {
   background: #746cc2 url("../img/fb-logo-black.png") no-repeat 50% 50%;
 }
-.social_insta:hover {
+.main_footer-social-insta:hover {
   background: #746cc2 url("../img/insta-logo-black.png") no-repeat 50% 50%;
 }
 
 /***PORTRAIT-SECTION***/
 
-.gallery {
+.portrait-gallery {
   max-width: 1200px;
   margin: 0 auto;
 }
-.gallery_wrap{
+.portrait-gallery__gallery-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
 }
-.gallery_item {
+.portrait-gallery__portrait-gallery_item {
   position: relative;
   padding: 0;
   margin: 0;
-  /*margin-bottom: -10px;*/
 }
-.gallery_item:hover:before {
+.portrait-gallery__portrait-gallery_item:hover:before {
   content:"Click for zoom";
   position: absolute;
-  top:50%;
+  top: 50px;
   left: 35%;
   width: 100%;
   height: 100%;
@@ -238,20 +230,21 @@
   font-weight: bold;
 }
 
-.gallery_image {
-  vertical-align: middle;
+.portrait-gallery__portrait-gallery_image {
+  display: block;
+  /*vertical-align: bottom;*/
   max-width: 100%;
-  height: auto;
+  /*height: auto;*/
 
 }
-.gallery_image:hover {
+.portrait-gallery__portrait-gallery_image:hover {
   opacity: 0.6;
   -webkit-transition:  0.5s ease-out;
   -moz-transition:  0.5s ease-out;
   -o-transition:  0.5s ease-out;
   transition:  0.5s ease-out;
 }
-.gallery_mix {
+.portrait-gallery__portrait-gallery-mix {
   width: 600px;
   height: 400px;
   display: -webkit-box;
@@ -283,29 +276,24 @@
 /***TEST-MEDIA-QUARRIES***/
 
 @media only screen and (max-width: 615px) {
-  .gallery_item {
+  .portrait-gallery__portrait-gallery_item {
     margin: 0 auto;
   }
-  .gallery_mix {
+  .portaint-gallert__gallery-mix {
     display: none;
   }
-    .desc_container {
+    .desc-section {
     height: auto;
   }
-  .main_header {
+  .page-header {
     width: 100%;
   }
-    .main_logo {
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-  }
-  .desc_text {
+  .desc-section__desc-text {
     font-size: 1em;
     margin: 50px auto;
     padding-bottom: 20px;
   }
-  .desc_wrap {
+  .desc-section__desc-wrap {
     width: 70%;
     margin-left: 15%;
     margin-top: 50px;
@@ -313,21 +301,24 @@
   .desc_image {
     max-width: 100%;
   }
-  .desc_wrap:nth-child(2) {
+  .desc-section__desc-wrap:nth-child(2) {
     width: 100%;
     margin: 0 auto; 
   }
-  .main_footer {
+  .main-footer {
     display: none;
   }
-  .sidebar {
+  .main-content__sidebar {
     width: 100vw;
   }
-  .sidebar_item {
+  .main-content__sidebar-item {
     text-align: center;
   }
-  .icon_menu {
+  .icon-menu {
     margin-left: 5px;
   }
+  .page-header__logo-wrap {
+    margin-left: 40%;
+ }  
 }
 

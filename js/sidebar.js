@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".icon_menu").click(function(event) {
-		$(".sidebar").toggleClass("active")
+	$(".icon-menu").click(function(event) {
+		$(".main-content__sidebar").toggleClass("active")
 	});
 });
