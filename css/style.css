@@ -199,11 +199,12 @@
 }
 
 /***PORTRAIT-SECTION***/
-
+.beauty-gallery,
 .portrait-gallery {
   max-width: 1200px;
   margin: 0 auto;
 }
+.beauty-gallery__beauty_gallery_wrap,
 .portrait-gallery__gallery-wrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -213,11 +214,13 @@
   flex-wrap: wrap;
 
 }
+.beauty-gallery__beauty-gallery-item,
 .portrait-gallery__portrait-gallery_item {
   position: relative;
   padding: 0;
   margin: 0;
 }
+/*.beauty-gallery__beauty-gallery-item:hover:before,
 .portrait-gallery__portrait-gallery_item:hover:before {
   content:"Click for zoom";
   position: absolute;
@@ -229,7 +232,7 @@
   color: #000;
   font-weight: bold;
 }
-
+*/.beauty-gallery__beauty-gallery-image,
 .portrait-gallery__portrait-gallery_image {
   display: block;
   /*vertical-align: bottom;*/
@@ -237,6 +240,7 @@
   /*height: auto;*/
 
 }
+.beauty-gallery__beauty-gallery-image:hover,
 .portrait-gallery__portrait-gallery_image:hover {
   opacity: 0.6;
   -webkit-transition:  0.5s ease-out;
@@ -276,6 +280,7 @@
 /***TEST-MEDIA-QUARRIES***/
 
 @media only screen and (max-width: 615px) {
+  .beauty-gallery__beauty-gallery-item,
   .portrait-gallery__portrait-gallery_item {
     margin: 0 auto;
   }
