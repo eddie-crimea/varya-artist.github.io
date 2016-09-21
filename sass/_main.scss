@@ -1,0 +1,334 @@
+
+ body {
+  font-size: 1em;
+  line-height: 1.2;
+  font-family: "Corbel", "Arial", sans-serif;
+}
+/*
+HEADER
+*/
+.main-content__wrapper,
+.page-header__wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  min-height: 50px;
+  z-index: 9999;
+  background: #fff;
+  border-bottom: 2px solid #000;
+}
+.page-header__logo-wrap {
+  display: block;
+  margin-left: 47%;
+  margin-top: 10px;
+}
+.icon-menu {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height: 25px;
+  width: 20px;
+  float: left;
+  padding: 5px 0;
+  cursor: pointer;
+  z-index: 20;
+}
+.icon-menu__stripe {
+  display: block;
+  height: 3px;
+  margin: 4px 0;
+  background: #000;
+}
+
+ /***
+ SIDEBAR-STYLE
+ ***/
+
+.main-content__sidebar {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  float: left;
+  width: 160px;
+  height: 100%;
+  padding: 20px;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4)
+}
+.active {
+  left: 0;
+  -webkit-transition: left 1s;
+  -moz-transition: left 1s;
+  -o-transition: left 1s;
+  transition: left 1s;
+}
+.main-content__sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-content__sidebar-item {
+  font-size: 0.937em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0 3px;
+  margin: 20px 0;
+}
+.main-content__sidebar-item:first-child {
+  margin-top: 65px;
+}
+.main-content__sidebar-link {
+  text-decoration: none;
+  color: #fff;
+}
+.main-content__sidebar-link:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+.main-slider__slide_image {
+  height: auto;
+  width: 100%;
+}
+.slick-dots {
+  position: absolute;
+  display: block; 
+  bottom: 100%;
+  top: 0%;
+}
+
+/***
+SECOND-SECTION-ABOUT
+***/
+
+.about {
+  height: 95vh;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0 20px;
+}
+.about__wrap {
+  width: auto;
+  margin: 0 auto;
+}
+.about__wrap--width-text {
+  width: 70%;
+}
+.about__image{
+  max-width: 100%;
+  height: auto;
+}
+.about__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+/*
+FOOTER
+*/
+.main-footer {
+  min-height: 60px;
+  width: 100%;
+  border-top: 2px solid #000;
+}
+.main-footer__social {
+  margin-left: 45%;
+  min-height: 30px;
+}
+.main-footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-footer__social-item {
+  display: inline-block;
+}
+.main-footer__social-link {
+  display: block;
+  height: 41px;
+  width: 41px;
+  margin: 10px 5px;
+  background: black;
+  display: block;
+  text-decoration: none;
+  font-size: 0;
+  border-radius: 50%;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.main_footer--social-vk {
+  background: #000 url("../img/vk_logo.png") no-repeat 50% 50%;
+}
+.main_footer-social-fb {
+  background: #000 url("../img/fb_logo.png") no-repeat 50% 50%;
+}
+.main_footer-social-insta {
+  background: #000 url("../img/insta_logo.png") no-repeat 50% 50%;
+}
+.main_footer--social-vk:hover {
+  background: #746cc2 url("../img/vk-logo-black.png") no-repeat 50% 50%;
+}
+.main_footer-social-fb:hover {
+  background: #746cc2 url("../img/fb-logo-black.png") no-repeat 50% 50%;
+}
+.main_footer-social-insta:hover {
+  background: #746cc2 url("../img/insta-logo-black.png") no-repeat 50% 50%;
+}
+
+/***PORTRAIT-SECTION***/
+.street-gallery,
+.beauty-gallery,
+.portrait-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.streen-gallery__wrap,
+.beauty-gallery__beauty_gallery_wrap,
+.portrait-gallery__gallery-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.street-gallery__item,
+.beauty-gallery__beauty-gallery-item,
+.portrait-gallery__portrait-gallery_item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+/*.beauty-gallery__beauty-gallery-item:hover:before,
+.portrait-gallery__portrait-gallery_item:hover:before {
+  content:"Click for zoom";
+  position: absolute;
+  top: 50px;
+  left: 35%;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+*/
+.street-gallery__image,
+.beauty-gallery__beauty-gallery-image,
+.portrait-gallery__portrait-gallery_image {
+  display: block;
+  max-width: 100%;
+}
+.street-gallery__image:hover,
+.beauty-gallery__beauty-gallery-image:hover,
+.portrait-gallery__portrait-gallery_image:hover {
+  opacity: 0.6;
+  -webkit-transition:  0.5s ease-out;
+  -moz-transition:  0.5s ease-out;
+  -o-transition:  0.5s ease-out;
+  transition:  0.5s ease-out;
+}
+.portrait-gallery__portrait-gallery-mix {
+  width: 600px;
+  height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.scroller {
+  position: fixed;    
+  bottom: 30px;
+  right: 0;
+  margin-right: 30px; 
+  background: #f6f6f6 url("../img/arrow.png") no-repeat center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  opacity: 0.5;
+}
+.scroller:hover {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+/***TEST-MEDIA-QUARRIES***/
+
+@media all and (max-width: 480px) {
+
+  .main-content__sidebar {
+    width: 100%;
+    background: rgba(0, 0, 0, .8)
+  }
+  .main-content__sidebar-item {
+    text-align: center;
+    margin-right: 70px;
+  }
+  .icon-menu {
+    margin-left: 5px;
+  }
+  .page-header__logo-wrap {
+    margin-left: 40%;
+ }  
+  .streen-gallery__wrap,
+  .portrait-gallery__gallery-wrap,
+  .beauty-gallery__beauty_gallery_wrap {
+    margin: 0 10px;
+  }
+  .street-gallery__item,
+  .beauty-gallery__beauty-gallery-item,
+  .portrait-gallery__portrait-gallery_item {
+    margin: 0 auto;
+    margin-bottom: 5px;
+  }
+  .portaint-gallert__gallery-mix {
+    display: none;
+  }
+    .about {
+    height: auto;
+    padding: 0 10px;
+  }
+  .about__wrap {
+    max-width: 70%; /* сжимает текст в мобильной версии, вместе с фото */
+  }
+  .about__wrap--width-text {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .main-footer {
+    min-height: 40px;
+    width: 100%;
+  }
+  .main-footer__social {
+    margin-left: 30%;
+  }
+}
+
